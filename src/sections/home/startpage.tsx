@@ -1,10 +1,13 @@
+import ModeToggle from "@/components/modeToggle";
 import { Hero } from "./hero";
+import SectionStories from "./section-stories";
 
 export function StartPage() {
   return (
     <>
+      <ModeToggle />
       <Hero />
-      {/* <SectionStories /> */}
+      <SectionStories />
       {/* <SectionOne /> */}
       {/* <SectionTwo /> */}
       {/* <SectionThree /> */}
