@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { baseUrl } from "./sitemap";
 import { Header } from "@/components/header";
+import { FooterCTA } from "@/components/footer-cta";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -97,8 +99,8 @@ export default function RootLayout({
           <main className="container mx-auto px-4 overflow-hidden md:overflow-visible">
             {children}
           </main>
-          {/* <FooterCTA /> */}
-          {/* <Footer /> */}
+          <FooterCTA />
+          <Footer />
           {/* <Analytics /> */}
           {/* <DevMessage /> */}
         </ThemeProvider>
