@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { baseUrl } from "./sitemap";
+import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -92,7 +93,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Header /> */}
+          <Header />
           <main className="container mx-auto px-4 overflow-hidden md:overflow-visible">
             {children}
           </main>
