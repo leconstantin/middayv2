@@ -1,10 +1,7 @@
-import ModeToggle from "@/components/modeToggle";
+import { StartPage } from "@/sections/home/startpage";
 
-export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1>Hello</h1>
-      <ModeToggle />
-    </div>
-  );
+export const revalidate = 1800;
+
+export default function Page() {
+  return <StartPage />;
 }
